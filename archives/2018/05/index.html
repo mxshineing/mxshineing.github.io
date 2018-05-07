@@ -4,7 +4,7 @@
         <title>沐夏 | mxshine</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="shortcut icon" href="https://www.castarwang.com/wp-content/uploads/2017/12/cropped-fzj.png">
+        <link rel="shortcut icon" href="https://o7y8mvdbc.qnssl.com/tc/uploads/1805/070756472922.jpg">
         <link rel="stylesheet" href="//cdn.css.net/libs/font-awesome/4.5.0/css/font-awesome.min.css">
         <style>
             html, body {
@@ -22,28 +22,49 @@
                 text-align: center;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                margin-left:-160px;
+				margin-top:-160px;
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 user-select: none;
                 background: rgba(250,250,250,.6);
                 border-radius: 5px;
+				
             }
+			.shake{
+				-webkit-animation: shake .7s ease-out;
+				animation: shake .7s ease-out;
+			}
+			@keyframes shake {
+				0%, 100% {
+					-webkit-transform: translate3d(0,0,0);
+					transform: translate3d(0,0,0);
+				}
+				10%, 30%, 50%, 70%, 90% {
+					-webkit-transform: translate3d(-10px,0,0);
+					transform: translate3d(-10px,0,0);
+				}
+				20%, 40%, 60%, 80% {
+					-webkit-transform: translate3d(10px,0,0);
+					transform: translate3d(10px,0,0);
+				}
+			}
             .wrapper-logo-img {
-                max-height: 96px;
-                max-width: 96px;
-                padding: 30px 0 10px;
+                height: 96px;
+                width: 96px;
+                margin: 30px 0 20px;
                 border-radius: 50%;
             }
             #wrapper h3{
               font-size:30px;
               font-weight: 500;
+			  margin:0;
             }
             #wrapper p{
               font-size:16px;
               text-align: center;
               margin: 0;
-              padding-bottom: 20px;
+              padding: 10px 0 20px;
             }
             .body-bg{
               width: 100%;
@@ -87,8 +108,9 @@
                 margin: 0 5px;
             }
             .social-icon a:hover{
+			  background:#e5a2b4;
               border:1px solid #e5a2b4;
-              color: #e5a2b4;
+              color: #fff;
             }
             .footer-yiyan{
               position: absolute;
@@ -118,8 +140,8 @@
     </head>
     <body>
       <div class="body-bg"></div>
-        <div id="wrapper">
-          <img src="https://www.castarwang.com/wp-content/uploads/2017/12/cropped-fzj.png" class="wrapper-logo-img">
+        <div id="wrapper" class="shake">
+          <img src="https://o7y8mvdbc.qnssl.com/tc/uploads/1805/070756472922.jpg" class="wrapper-logo-img">
           <h3>沐夏</h3>
           <p>我叫沐夏</p>
           <div class="social-icon">
