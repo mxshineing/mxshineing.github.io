@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
-        <title>九十 | Shamopoo</title>
+        <title>沐夏 | mxshine</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="shortcut icon" href="https://www.castarwang.com/wp-content/uploads/2017/12/cropped-fzj.png">
+        <link rel="stylesheet" href="//cdn.css.net/libs/font-awesome/4.5.0/css/font-awesome.min.css">
         <style>
             html, body {
                 overflow: hidden;
@@ -12,11 +13,7 @@
             }
             body {
                 font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-                color: #333;
-            }
-            @font-face{
-                font-family: 'YaHei Consolas Hybrid';
-                src : url('../fonts/yaheiconsolashybrid.ttf');
+                color: #fff;
             }
             #wrapper {
                 position: absolute;
@@ -30,79 +27,67 @@
                 -webkit-user-select: none;
                 -moz-user-select: none;
                 user-select: none;
+                background: rgba(250,250,250,.6);
+                border-radius: 5px;
+                padding:30px 0;
             }
-            p{
-              font-size: 18px;
-              line-height: 2em;
+            .wrapper-logo-img {
+                max-height: 96px;
+                max-width: 96px;
+                padding: 30px 0 10px;
+                border-radius: 50%;
+            }
+            #wrapper h3{
+              font-size:30px;
+              font-weight: 500;
+            }
+            #wrapper p{
+              font-size:16px;
+              text-align: center;
               margin: 0;
-              letter-spacing: 2px;
+              padding-bottom: 20px;
             }
-            p:nth-of-type(1){
-              margin-top: 50px;
+            .body-bg{
+              width: 100%;
+              height: 100vh;
+              background-repeat: no-repeat no-repeat;
+              background-position: center center, center center;
+              background-size: cover, cover;
+              position: fixed;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              z-index: -1;
+              will-change: scroll-position;
             }
-            h3{
-              margin: 0;
-            }
-            h4{
-              color: #e67474;
-              margin-top: -30px;
-            }
-            a{
-                color: #e67474;
-                text-decoration: none;
-                border:1px solid #e67474;
-                padding: 5px 8px;
-                border-radius:5px;
-                transition: color .2s ease;
-            }
-            a:hover {
-                color: #fff;
-                background-color:#e67474;
-            }
-            canvas {
+            .body-bg::after {
+                content: "";
+                background-color: rgba(0, 0, 0, 0.2);
                 position: absolute;
                 top: 0;
                 left: 0;
-                z-index: -1;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
+                right: 0;
+                bottom: 0;
             }
-            .logo{
-                font-size: 40px;
-                text-transform: uppercase;
-                fill: none;
-                stroke: #e67474;
-                stroke-width: 1px;
-                stroke-dasharray: 90 310;
-                animation: stroke 6s infinite linear;
-                font-family: 'Roboto', 'Pingfang SC', 'Microsoft Yahei', sans-serif;
-                font-weight: 700;
+            .social-icon a{
+                position: relative;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                font-size: 20px;
+                border-radius: 50%;
+                line-height: 32px;
+                border: 1px solid #666;
+                color: #666;
+                text-align: center;
+                vertical-align: middle;
+                transition:all 0.1s ease-out;
+                margin: 0 5px;
             }
-            .logo-1{
-                stroke: #e67474;
-                text-shadow: 0 0 3px #e67474;
-                animation-delay: -1.5s;
-            }
-            .logo-2{
-                stroke: #f39c12;
-                text-shadow: 0 0 3px #f39c12;
-                animation-delay: -3s;
-            }
-            .logo-3{
-                stroke: #e74c3c;
-                text-shadow: 0 0 3px #e74c3c;
-                animation-delay: -4.5s;
-            }
-            .logo-4{
-                stroke: #9b59b6;
-                text-shadow: 0 0 3px #9b59b6;
-                animation-delay: -6s;
-            }
-            @keyframes stroke {
-              100% {
-                stroke-dashoffset: -400;
-              }
+            .social-icon a:hover{
+              border:1px solid #e5a2b4;
+              color: #e5a2b4;
             }
             .footer-yiyan{
               position: absolute;
@@ -112,7 +97,7 @@
               margin:10px 10%;
               padding:10px;
               user-select: none;
-              color:#969696;
+              color:#fff;
             }
         </style>
         <script type="text/javascript">
@@ -131,78 +116,36 @@
         </script>
     </head>
     <body>
+      <div class="body-bg"></div>
         <div id="wrapper">
-           <h3>
-              <svg width="100%" height="100">
-                <text text-anchor="middle" x="50%" y="50%" class="logo logo-1">
-                   shamopoo
-                </text>
-                 <text text-anchor="middle" x="50%" y="50%" class="logo logo-2">
-                   shamopoo
-                </text>
-                 <text text-anchor="middle" x="50%" y="50%" class="logo logo-3">
-                   shamopoo
-                </text>
-                 <text text-anchor="middle" x="50%" y="50%" class="logo logo-4">
-                   shamopoo
-                </text>
-              </svg>
-           </h3>
-           <h4>Keep Learning Heart</h4>
-           <p><a href="https://blog.shamopoo.top/" target="_blank">Blog</a></p>
+          <img src="https://www.castarwang.com/wp-content/uploads/2017/12/cropped-fzj.png" class="wrapper-logo-img">
+          <h3>沐夏</h3>
+          <p>我叫沐夏</p>
+          <div class="social-icon">
+            <a target="_blank" href="https://blog.mxshine.top/"><i class="fa fa-fort-awesome"></i></a>
+            <a target="_blank" href="https://blog.mxshine.top/"><i class="fa fa-music"></i></a>
+            <a target="_blank" href="https://blog.mxshine.top/"><i class="fa fa-twitter"></i></a>
+            <a target="_blank" href="https://blog.mxshine.top/"><i class="fa fa-weibo"></i></a>
+            <a target="_blank" href="https://blog.mxshine.top/"><i class="fa fa-qq"></i></a>
+          </div>
         </div>
         <script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js&charset=utf-8"></script>
         <div class="footer-yiyan" id="lwlhitokoto">
           <script>lwlhitokoto()</script>
         </div>
-        <canvas></canvas>
         <script>
-
-            document.addEventListener('touchmove', function (e) {
-                e.preventDefault()
-            })
-            var c = document.getElementsByTagName('canvas')[0],
-                x = c.getContext('2d'),
-                pr = window.devicePixelRatio || 1,
-                w = window.innerWidth,
-                h = window.innerHeight,
-                f = 90,
-                q,
-                m = Math,
-                r = 0,
-                u = m.PI*2,
-                v = m.cos,
-                z = m.random
-            c.width = w*pr
-            c.height = h*pr
-            x.scale(pr, pr)
-            x.globalAlpha = 0.6
-            function i(){
-                x.clearRect(0,0,w,h)
-                q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
-                while(q[1].x<w+f) d(q[0], q[1])
-            }
-            function d(i,j){
-                x.beginPath()
-                x.moveTo(i.x, i.y)
-                x.lineTo(j.x, j.y)
-                var k = j.x + (z()*2-0.25)*f,
-                    n = y(j.y)
-                x.lineTo(k, n)
-                x.closePath()
-                r-=u/-50
-                x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
-                x.fill()
-                q[0] = q[1]
-                q[1] = {x:k,y:n}
-            }
-            function y(p){
-                var t = p + (z()*2-1.1)*f
-                return (t>h||t<0) ? y(p) : t
-            }
-            document.onclick = i
-            document.ontouchstart = i
-            i()
+        var bgImg=new Array();
+        var bgImgRoot = "https://view.phower.me/images/";
+            bgImg[0] = bgImgRoot + "2018/03/19/BG-005.jpg";
+            bgImg[1] = bgImgRoot +  "2018/03/19/BG-006.jpg";
+            bgImg[2] = bgImgRoot +  "2018/03/19/BG-007.jpg";
+            bgImg[3] = bgImgRoot +  "2018/03/19/BG-003.jpg";
+            bgImg[4] = bgImgRoot +  "2018/03/19/BG-004.jpg";
+        window.onload = function() {
+            var num = Math.floor(Math.random() * 5);
+                bg = document.querySelector(".body-bg");
+                bg.style.backgroundImage = "url("+bgImg[num]+")";
+        }
         </script>
     </body>
 </html>
