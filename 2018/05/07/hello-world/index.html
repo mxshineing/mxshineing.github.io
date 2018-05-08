@@ -122,6 +122,22 @@
               user-select: none;
               color:#fff;
             }
+			canvas{
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				pointer-events: none;
+				z-index: 999999;
+			}
+			.snow{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				z-index: 100001;
+			}
         </style>
         <script type="text/javascript">
 
@@ -139,6 +155,7 @@
         </script>
     </head>
     <body>
+	  <div class="Snow" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;"><canvas width="1360" height="566"></canvas></div>
       <div class="body-bg"></div>
         <div id="wrapper" class="shake">
           <img src="https://o7y8mvdbc.qnssl.com/tc/uploads/1805/070756472922.jpg" class="wrapper-logo-img">
@@ -169,6 +186,8 @@
                 bg = document.querySelector(".body-bg");
                 bg.style.backgroundImage = "url("+bgImg[num]+")";
         }
-        </script>
+		</script>
     </body>
 </html>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://pic.taifua.com/js/snow/snow.js"></script>
